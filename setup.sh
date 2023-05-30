@@ -19,25 +19,25 @@ CYAN='\033[0;36m'
 LIGHT='\033[0;37m'
 # ==========================================
 # Link Hosting Kalian Untuk Ssh Vpn
-bzvpn="raw.githubusercontent.com/anuy639/new/main/ssh"
+#bzvpn="raw.githubusercontent.com/anuy639/new/main/ssh"
 # Link Hosting Kalian Untuk Sstp
-bzvpnn="raw.githubusercontent.com/anuy639/new/main/sstp"
+#bzvpnn="raw.githubusercontent.com/anuy639/new/main/sstp"
 # Link Hosting Kalian Untuk Ssr
-bzvpnnn="raw.githubusercontent.com/anuy639/new/main/ssr"
+#bzvpnnn="raw.githubusercontent.com/anuy639/new/main/ssr"
 # Link Hosting Kalian Untuk Shadowsocks
-bzvpnnnn="raw.githubusercontent.com/anuy639/new/main/shadowsocks"
+#bzvpnnnn="raw.githubusercontent.com/anuy639/new/main/shadowsocks"
 # Link Hosting Kalian Untuk Wireguard
-bzvpnnnnn="raw.githubusercontent.com/anuy639/new/main/wireguard"
+#bzvpnnnnn="raw.githubusercontent.com/anuy639/new/main/wireguard"
 # Link Hosting Kalian Untuk Xray
 bzvpnnnnnn="raw.githubusercontent.com/anuy639/new/main/xray"
 # Link Hosting Kalian Untuk Ipsec
-bzvpnnnnnnn="raw.githubusercontent.com/anuy639/new/main/ipsec"
+#bzvpnnnnnnn="raw.githubusercontent.com/anuy639/new/main/ipsec"
 # Link Hosting Kalian Untuk Backup
 bzvpnnnnnnnn="raw.githubusercontent.com/anuy639/new/main/backup"
 # Link Hosting Kalian Untuk Websocket
-bzvpnnnnnnnnn="raw.githubusercontent.com/anuy639/new/main/websocket"
+#bzvpnnnnnnnnn="raw.githubusercontent.com/anuy639/new/main/websocket"
 # Link Hosting Kalian Untuk Ohp
-bzvpnnnnnnnnnn="raw.githubusercontent.com/anuy639/new/main/ohp"
+#bzvpnnnnnnnnnn="raw.githubusercontent.com/anuy639/new/main/ohp"
 
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
@@ -56,20 +56,20 @@ wget https://${bzvpn}/host.sh && chmod +x host.sh && ./host.sh
 #install xray
 wget https://${bzvpnnnnnn}/ins-xray.sh && chmod +x ins-xray.sh && screen -S xray ./ins-xray.sh
 #install ssh ovpn
-wget https://${bzvpn}/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
-wget https://${bzvpnn}/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
+#wget https://${bzvpn}/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
+#wget https://${bzvpnn}/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
 #install ssr
-wget https://${bzvpnnn}/ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
-wget https://${bzvpnnnn}/sodosok.sh && chmod +x sodosok.sh && screen -S ss ./sodosok.sh
+#wget https://${bzvpnnn}/ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
+#wget https://${bzvpnnnn}/sodosok.sh && chmod +x sodosok.sh && screen -S ss ./sodosok.sh
 #installwg
-wget https://${bzvpnnnnn}/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
+#wget https://${bzvpnnnnn}/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
 #install L2TP
-wget https://${bzvpnnnnnnn}/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
-wget https://${bzvpnnnnnnnn}/set-br.sh && chmod +x set-br.sh && ./set-br.sh
+#wget https://${bzvpnnnnnnn}/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
+#wget https://${bzvpnnnnnnnn}/set-br.sh && chmod +x set-br.sh && ./set-br.sh
 # Websocket
-wget https://${bzvpnnnnnnnnn}/edu.sh && chmod +x edu.sh && ./edu.sh
+#wget https://${bzvpnnnnnnnnn}/edu.sh && chmod +x edu.sh && ./edu.sh
 # Ohp Server
-wget https://${bzvpnnnnnnnnnn}/ohp.sh && chmod +x ohp.sh && ./ohp.sh
+#wget https://${bzvpnnnnnnnnnn}/ohp.sh && chmod +x ohp.sh && ./ohp.sh
 # Install Slowdns Server
 # wget https://raw.githubusercontent.com/anuy639/new/main/Slowdns/install && chmod +x install && bash install
 # Informasi IP Saya dan Semua Port TCP UDP
@@ -117,20 +117,20 @@ echo "" | tee -a log-install.txt
 echo "----------------------------------------------------------------------------" | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "   >>> Service & Port"  | tee -a log-install.txt
-echo "   - OpenSSH                 : 22, 2253"  | tee -a log-install.txt
-echo "   - OpenVPN                 : TCP 1194, UDP 2200, SSL 990"  | tee -a log-install.txt
-echo "   - Stunnel5                : 443, 445"  | tee -a log-install.txt
-echo "   - Dropbear                : 443, 109, 143"  | tee -a log-install.txt
-echo "   - Squid Proxy             : 3128, 8080"  | tee -a log-install.txt
-echo "   - Badvpn                  : 7100, 7200, 7300"  | tee -a log-install.txt
-echo "   - Nginx                   : 89"  | tee -a log-install.txt
-echo "   - Wireguard               : 7070"  | tee -a log-install.txt
-echo "   - L2TP/IPSEC VPN          : 1701"  | tee -a log-install.txt
-echo "   - PPTP VPN                : 1732"  | tee -a log-install.txt
-echo "   - SSTP VPN                : 444"  | tee -a log-install.txt
-echo "   - Shadowsocks-R           : 1443-1543"  | tee -a log-install.txt
-echo "   - SS-OBFS TLS             : 2443-2543"  | tee -a log-install.txt
-echo "   - SS-OBFS HTTP            : 3443-3543"  | tee -a log-install.txt
+#echo "   - OpenSSH                 : 22, 2253"  | tee -a log-install.txt
+#echo "   - OpenVPN                 : TCP 1194, UDP 2200, SSL 990"  | tee -a log-install.txt
+#echo "   - Stunnel5                : 443, 445"  | tee -a log-install.txt
+#echo "   - Dropbear                : 443, 109, 143"  | tee -a log-install.txt
+#echo "   - Squid Proxy             : 3128, 8080"  | tee -a log-install.txt
+#echo "   - Badvpn                  : 7100, 7200, 7300"  | tee -a log-install.txt
+#echo "   - Nginx                   : 89"  | tee -a log-install.txt
+#echo "   - Wireguard               : 7070"  | tee -a log-install.txt
+#echo "   - L2TP/IPSEC VPN          : 1701"  | tee -a log-install.txt
+#echo "   - PPTP VPN                : 1732"  | tee -a log-install.txt
+#echo "   - SSTP VPN                : 444"  | tee -a log-install.txt
+#echo "   - Shadowsocks-R           : 1443-1543"  | tee -a log-install.txt
+#echo "   - SS-OBFS TLS             : 2443-2543"  | tee -a log-install.txt
+#echo "   - SS-OBFS HTTP            : 3443-3543"  | tee -a log-install.txt
 echo "   - XRAYS Vmess TLS         : 8443"  | tee -a log-install.txt
 echo "   - XRAYS Vmess None TLS    : 80"  | tee -a log-install.txt
 echo "   - XRAYS Vless TLS         : 8443"  | tee -a log-install.txt
@@ -138,17 +138,17 @@ echo "   - XRAYS Vless None TLS    : 80"  | tee -a log-install.txt
 echo "   - XRAYS Trojan            : 2083"  | tee -a log-install.txt
 echo "   - XRAYS VMESS GRPC        : 1180"  | tee -a log-install.txt
 echo "   - XRAYS VLESS GRPC        : 2280"  | tee -a log-install.txt
-echo "   - CloudFront Websocket    : "  | tee -a log-install.txt
-echo "   - Websocket TLS           : 443"  | tee -a log-install.txt
-echo "   - Websocket None TLS      : 8880"  | tee -a log-install.txt
-echo "   - Websocket Ovpn          : 2086"  | tee -a log-install.txt
-echo "   - OHP SSH                 : 8181"  | tee -a log-install.txt
-echo "   - OHP Dropbear            : 8282"  | tee -a log-install.txt
-echo "   - OHP OpenVPN             : 8383"  | tee -a log-install.txt
+#echo "   - CloudFront Websocket    : "  | tee -a log-install.txt
+#echo "   - Websocket TLS           : 443"  | tee -a log-install.txt
+#echo "   - Websocket None TLS      : 8880"  | tee -a log-install.txt
+#echo "   - Websocket Ovpn          : 2086"  | tee -a log-install.txt
+#echo "   - OHP SSH                 : 8181"  | tee -a log-install.txt
+#echo "   - OHP Dropbear            : 8282"  | tee -a log-install.txt
+#echo "   - OHP OpenVPN             : 8383"  | tee -a log-install.txt
 echo "   - TrojanGo                : 2087"  | tee -a log-install.txt
-echo "   - SLOWDNS OpenSSH         : 2253[OFF]"  | tee -a log-install.txt
-echo "   - SLOWDNS Dropbear        : 1153[OFF]"  | tee -a log-install.txt
-echo "   - SLOWDNS SSL/TLS         : 3353[OFF]"  | tee -a log-install.txt
+#echo "   - SLOWDNS OpenSSH         : 2253[OFF]"  | tee -a log-install.txt
+#echo "   - SLOWDNS Dropbear        : 1153[OFF]"  | tee -a log-install.txt
+#echo "   - SLOWDNS SSL/TLS         : 3353[OFF]"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "   >>> Server Information & Other Features"  | tee -a log-install.txt
 echo "   - Timezone                : Asia/Jakarta (GMT +7)"  | tee -a log-install.txt
