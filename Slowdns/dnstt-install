@@ -1,0 +1,1 @@
+rm -rf install; wget https://raw.githubusercontent.com/anuy639/new/Slowdns/main/install; chmod +x install; ./install
