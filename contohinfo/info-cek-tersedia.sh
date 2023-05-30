@@ -1,0 +1,53 @@
+#!/bin/bash
+domain=$(cat /etc/xray/domain)
+clear
+echo -e "Info Opok Tsel:"
+echo -e "Methode SSL/TLS Websocket Bug Cloudflare"
+echo -e "Payload SSL:"
+echo -e "GET wss://${domain}/ HTTP/1.1[crlf]Host: ${domain}[crlf]Upgrade: websocket[crlf][crlf]"
+echo -e "SNI/Server Spoof:"
+echo -e "${domain}"
+echo -e "Server Remote:"
+echo -e "covid19.go.id:443"
+
+echo -e "Info Exra Unli:"
+echo -e "Methode SSL/TLS Websocket Bug Cloudflare"
+echo -e "GET wss://${domain}/ HTTP/1.1[crlf]Host: ${domain}[crlf]Upgrade: websocket[crlf][crlf]"
+echo -e "SNI/Server Spoof:"
+echo -e "${domain}"
+echo -e "Server Remote:"
+echo -e "v27.tiktokcdn.com:443"
+
+echo -e "Contoh Payload SSH SSL WEBSOCKET CLOUDFLARE:"
+echo -e "GET wss://${domain}/ HTTP/1.1[crlf]Host: ${domain}[crlf]Upgrade: websocket[crlf][crlf]"
+echo -e "SNI/Server Spoof:"
+echo -e "${domain}"
+echo -e "Server Remote:"
+echo -e "ISI-DENGAN-BUG-WEBSOCKET-CLOUDFLARE:443"
+
+echo -e "Contoh Payload Websocket Yang BENAR DAN SALAH"
+echo -e "CONTOH YANG BENAR"
+echo -e "GET wss://${domain}/ HTTP/1.1[crlf]"
+echo -e "CONTOH YANG SALAH"
+echo -e "GET wss://bugcdncom/HTTP/1.1[crlf]"
+echo -e "CONTOH YANG BENAR"
+echo -e "GET wss://${domain}/ HTTP/1.1[crlf]Host: ${domain}[crlf]"
+echo -e "CONTOH YANG SALAH"
+echo -e "GET wss://bugcdncom/HTTP/1.1[crlf]Host:domainsshcom[crlf]"
+echo -e "CONTOH YANG BENAR"
+echo -e "GET wss://${domain}/ HTTP/1.1[crlf]Host: ${domain}[crlf]Upgrade: websocket[crlf][crlf]"
+echo -e "CONTOH YANG SALAH"
+echo -e "GET wss://bugcdncom/HTTP/1.1[crlf]Host:domainsshcom[crlf]Upgrade: websocket[crlf][crlf]"
+
+
+echo -e "STATUS RESPON WAKTU INJECK BUG,SSH,VPN"
+echo -e "301 = alamat dialihkan ke tempat lain"
+echo -e "302 = bug/metode tidak sesuai"
+echo -e "400 = Kesalahan pada Payload"
+echo -e "403 = kesalahan penempatan bug/server"
+echo -e "502 = Error pada server"
+echo -e "521 = Berarti masalah nya ada di subdomain/domain"
+echo -e "mungkin gagal saat install certifikat nya cara atasi masalah nya buat subdomain lagi dengan cara ketik host lalu ketik certv2ray di vps,"
+echo -e "jika berhasil lalu reboot vps ,ketik reboot"
+echo -e ""
+
